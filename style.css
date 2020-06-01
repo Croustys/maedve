@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-image: radial-gradient(rgb(0, 0, 0, 0.3), rgb(0, 0, 0, 0.8)),
+    url(https://images4.alphacoders.com/692/thumb-1920-692687.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.wrap {
+  width: 70%;
+  margin: auto;
+  background: transparent;
+  color: white;
+  font-family: sans-serif;
+}
+.content {
+  margin-top: 10vh;
+}
+h2 {
+  animation: slide_up 1s 0.7s ease-out;
+  font-size: 3rem;
+  margin-top: 7.5vh;
+  margin-bottom: 7.5vh;
+  text-indent: 3vw;
+}
+h1 {
+  animation: slide_down 1s 0.7s ease-out;
+  text-align: center;
+  font-size: 3.4rem;
+  margin-top: 10vh;
+}
+.content p {
+  font-size: 1.3rem;
+}
+.picture-container img {
+  margin-top: 8vh;
+  max-width: 30%;
+  height: auto;
+  display: flex;
+}
+.inner-pic {
+  display: flex;
+  justify-content: space-around;
+}
+.contact {
+  text-align: right;
+}
+.imageAni {
+  animation: spin 0.5s 1s forwards;
+}
+.container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 5vh;
+}
+.container a {
+  font-size: 1.5rem;
+  margin-right: 3vw;
+  display: inline-block;
+}
+.container a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: white;
+  transition: width 0.3s;
+}
+.container a:hover:after {
+  width: 100%;
+}
+.container a:link,
+.container a:active,
+.container a:visited {
+  color: white;
+  text-decoration: none;
+}
+#CurrentDate {
+  margin-top: 2.5vh;
+  font-size: 1em;
+}
+.high {
+  text-decoration: underline;
+  font-size: 1.25em;
+}
+.container a:hover {
+  animation: full-rot 1.5s alternate;
+}
+ul {
+  font-size: 1.3rem;
+}
+li {
+  margin-bottom: 1vh;
+}
+.vid {
+  display: block;
+  margin: auto;
+  width: 560px;
+  height: 315px;
+}
+ol li {
+  font-size: 1.5em;
+}
+.calc {
+  font-size: 2em;
+  text-align: center;
+  display: block;
+  margin: auto;
+  width: 10vw;
+  background-color: transparent;
+  color: white;
+  margin-bottom: 5vh;
+  border-radius: 0.2em;
+  font-weight: 600;
+}
+.calc option {
+  color: black;
+}
+#calc-m {
+  margin-bottom: 5vh;
+}
+#ossz {
+  margin: 9vh 0;
+}
+.video {
+  margin-bottom: 3vh;
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes slide_up {
+  from {
+    transform: translateY(10vh);
+  }
+  to {
+    transform: translateY(0vh);
+  }
+}
+@keyframes slide_down {
+  from {
+    transform: translateY(-10vh);
+  }
+  to {
+    transform: translateY(0vh);
+  }
+}

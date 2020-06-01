@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Árak</title>
+    <link rel="stylesheet" href="../style.css">
+    <script src="../index.js" defer></script>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="container">
+            <nav>
+                <a href="../index.html">Főoldal</a>
+                <a href="../medvek/index.html">Medvéink</a>
+                <a href="">Áraink</a>
+            </nav>
+            <div class="contact">   
+                <h3>Info / Foglalás:</h3>
+                <p id="phone">+36 01/234-5678</p>
+                <h3 id="CurrentDate"></h3>
+            </div>
+        </div>
+        <h1>Áraink</h1>
+        <div class="container">
+            <div>
+                <h2>Felnőtt</h2>
+                <ol>
+                    <li>1500 HUF</li>
+                    <li>2700 HUF</li>
+                    <li>4100 HUF</li>
+                    <li>5400 HUF</li>
+                </ol>
+            </div>
+            <div>
+                <h2>Gyerek</h2>
+                <ol>
+                    <li>1000 HUF</li>
+                    <li>1900 HUF</li>
+                    <li>2800 HUF</li>
+                    <li>3700 HUF</li>
+                </ol>
+            </div>
+        </div>
+        <h1>Családi Kedvezmények</h1>
+        <div class="container">
+            <div>
+                <ul>
+                    <li>2 felnőtt 1 gyerek: 3500 HUF</li>
+                    <li>2 felnőtt 2 gyerek: 4300 HUF</li>
+                    <li>2 felnőtt 3 gyerek: 5100 HUF</li>
+                </ul>
+            </div>
+        </div>
+        <h1 id="calc-m">Ár kalkulátor</h1>
+        <form>
+            <p class="calc">Felnőttek</p>
+            <div>
+                <select class="calc" name="Felnőttek" id="felnottek">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+            </div>
+            <p class="calc">Gyerekek</p>
+            <div>
+                <select class="calc" name="Gyerekek" id="gyerekek">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                </select>
+            </div>
+            
+            <h1 id="ossz">Összesen: HUF</h1>
+        </form>
+    </div>
+</body>
+
+</html>
