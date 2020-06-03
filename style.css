@@ -31,6 +31,9 @@ h1 {
   font-size: 3.4rem;
   margin-top: 10vh;
 }
+.content h1 {
+  margin-bottom: 3vh;
+}
 .content p {
   font-size: 1.3rem;
 }
@@ -54,6 +57,10 @@ h1 {
   display: flex;
   justify-content: space-around;
   margin-top: 5vh;
+}
+a:any-link {
+  color: white;
+  text-decoration: none;
 }
 .container a {
   font-size: 1.5rem;
@@ -126,6 +133,12 @@ ol li {
 }
 .video {
   margin-bottom: 3vh;
+}
+.center {
+  text-align: center;
+}
+.ita {
+  font-style: italic;
 }
 @keyframes spin {
   from {
